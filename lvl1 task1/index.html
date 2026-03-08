@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio website</title>
+    <title>Portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- header section -->
      <header class="header">
-        <a href="#" class="logo">Portifolio</a>
+        <a href="#" class="logo">Portfolio</a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
 
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#" >About</a>
-            <a href="#" >Service</a>
-            <a href="#" >Portifolio</a>
-            <a href="#" >Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about" >About</a>
+            <a href="#services" >Services</a>
+            <a href="#portfolio" >Portfolio</a>
+            <a href="#contact" >Contact</a>
         </nav>
      </header>
 
@@ -27,20 +28,122 @@
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>D. Guru Hari Priya</h1>
-            <h3>I'm a <span>Frontend Developer</span></h3>
+            <h3>I'm a <span>Frontend Developer | UI/UX Enthusiast</span></h3>
             <p>Computer Science and Engineering undergraduate with a strong academic background (CGPA 8.70) and hands-on experience through academic and personal projects. Currently building a solid foundation in Data Structures and Algorithms using C++ , while actively exploring Frontend Development and UI/UX design. Familiar with HTML, CSS, Javascript and basic design principles using Figma, with a strong interest in creating user-friendly and visually appealing interfaces.</p>
             <div class="social-media">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/d-guru-hari-priya-797b0831b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/pika2105chu"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/hp21.12.21"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+            <a href="https://drive.google.com/file/d/1n7wOFxzJHuRPDo8IA7DkOExs40i5KOAV/view?usp=sharing" class="btn">Download CV</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="profilepic.jpeg" alt="profile-image">
+        </div>
+    </section>
+    
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profilepic.jpeg" alt="about profile pic">
+        </div>
+        
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Frontend Developer | UI/UX Enthusiast</h3>
+            <p>I am a B.Tech Computer Science student with a strong interest in software development and user-focused digital experiences. I have hands-on experience in front-end development using HTML, CSS, and JavaScript, and I continuously work on improving my programming skills in C++ with a focus on Object-Oriented Programming. I am also familiar with Python, MySQL, and Git for version control, which helps me manage and collaborate on projects efficiently.
+                <br>
+                <br>
+                Alongside development, I am exploring UI/UX design using Figma to understand how good design and usability enhance user experience. I enjoy building practical projects that combine clean code with intuitive interfaces, and I am constantly learning new technologies to improve both my development and design skills.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- service section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>As a frontend developer, I focus on creating responsive and visually appealing web interfaces using HTML, CSS, and JavaScript. I enjoy transforming ideas and designs into functional websites while ensuring clean structure, responsive layouts, and smooth user interactions. I continuously improve my development workflow using Git and apply best practices to write maintainable and efficient code.</p>
+                <a href="#" class="btn">Read More</a>
+                </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Enthusiast</h3>
+                <p>As a UI/UX enthusiast, I am learning to design intuitive and user-centered interfaces using Figma. I enjoy understanding how users interact with digital products and aim to create designs that are both aesthetically pleasing and easy to use. My goal is to bridge the gap between design and development by combining my frontend skills with thoughtful design principles to build seamless user experiences.</p>
+                <a href="#" class="btn">Read More</a>
+                </div>    
+            </div>
+        </section>
+
+        <!-- portflio section -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="goraksha project.jpeg" alt="goraksha project">
+                    <div class="portfolio-layer">
+                        <h4>GoRaksha Project</h4>
+                        <p>A static informational website created to spread awareness about cow protection and welfare initiatives. Built using HTML and CSS, the project highlights structured layout design, responsive sections, and clear presentation of information.</p>
+                        <a href="https://pika2105chu.github.io/GoRaksha/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="idcard-generator projecct.png" alt="id card generator project">
+                    <div class="portfolio-layer">
+                        <h4>Id-card Generator</h4>
+                        <p>A web-based application that generates a customizable student ID card by taking user input such as name, branch, enrollment number, and photo. The project dynamically creates a formatted ID card using HTML, CSS, JavaScript, and Java for backend processing. It demonstrates form handling, DOM manipulation, and responsive UI design.</p>
+                        <a href="https://pika2105chu.github.io/id-card-generator/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="safespace project.jpeg" alt="safe space project">
+                    <div class="portfolio-layer">
+                        <h4>SafeSpace - A group project</h4>
+                        <p>A responsive website designed to promote a safe digital environment and provide helpful resources. The project focuses on clean UI design and structured web pages built using HTML and CSS, emphasizing accessibility and user-friendly navigation.</p>
+                        <a href="https://dan-arushi09.github.io/SafeSpace/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- footer design -->
+         <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2026 by @dguruharipirya | All Rigths Reserved.</p>
             </div>
 
-            <a href="#" class="btn">Download CV</a>
-        </div>
-
-        <div class="home-img">
-            <img src="https://imgs.search.brave.com/bb505dStzs94IVTV62of6fDtKr_Y_tib5QIqt8AP_3w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXQuY29t/L3cvZnVsbC8yL2Iv/My8xODI3MjctMjU2/MHgxNDQwLWRlc2t0/b3AtaGQtZGVhZHBv/b2wtYmFja2dyb3Vu/ZC1waG90by5qcGc" alt="profile-image">
-        </div>
-      </section>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+         </footer>
 </body>
 </html>
