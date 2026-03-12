@@ -19,7 +19,7 @@ nav{
     position: absolute;
     width: 100%;
     max-width: 1200px;
-    -moz-force-broken-image-icon: 85px;
+    min-height: 85px;
     left: 50%;
     transform: translateX(-50%);
     padding: 2rem 1rem;
@@ -50,4 +50,158 @@ nav{
 
 .link a:hover{
     background-color: var(--secondary-color);
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+}
+
+.container_l{
+    flex:1;
+    background-image: url("tourist-place\ 1.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left_content{
+    margin: 5rem 3rem 0 auto;
+    padding: 1rem;
+    max-width: 400px;
+    text-align: right;
+}
+
+.left_content h4{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.left_content p{
+    color: var(--white);
+}
+
+.container_r{
+    flex: 1.5;
+    position: relative;
+}
+
+.container_r img{
+    position: absolute;
+    bottom: 0;
+    /* left: 20%; */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 450px;
+}
+
+.right_content{
+    text-align: right;
+    max-width: 600px;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.right_content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    color: var(--secondary-color);
+}
+
+.right_content h4{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.right_content p{
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+
+.btn{
+    margin-bottom: 3rem;
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.primary_btn{
+    margin-right: 1rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.secondary_btn{
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.socials span{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socials span:hover{
+    color: var(--secondary-color);
+}
+
+@media(width<800px) {
+    nav{
+        justify-content: center;
+    }
+
+    .navbar{
+        gap: 1rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container_l{
+        min-height: 700px;
+    }
+
+    .left_content{
+        max-width: none;
+        margin: 6rem 0;
+        text-align: center;
+    }
+
+    .container_r{
+        min-height: 700px;
+    }
+
+    .container_r img{
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -100%);
+    }
+
+    .right_content{
+        text-align: center;
+        margin: 8rem auto;
+    }
+
+    .socials{
+        justify-content: center;
+    }
 }
